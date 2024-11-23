@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
-import './css/login.css';
+import './css/Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
