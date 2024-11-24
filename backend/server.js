@@ -17,6 +17,9 @@ app.use(express.json());
 // Configurações do banco de dados
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // Necessário para conexões SSL no Render
+  },
 });
 
 // Middleware de autenticação
