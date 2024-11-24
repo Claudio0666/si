@@ -18,7 +18,7 @@ const Tips = () => {
 
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/api/emotion/latest', {
+      const response = await fetch('https://si-1.onrender.com/api/emotion/latest', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 

@@ -26,7 +26,7 @@ const Profissionais = () => {
 
   const fetchMedicos = async (especialidade) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/medicos/${encodeURIComponent(especialidade)}`);
+      const response = await fetch(`https://si-1.onrender.com/api/medicos/${encodeURIComponent(especialidade)}`);
       if (!response.ok) throw new Error('Erro ao buscar médicos');
       const data = await response.json();
       setMedicos(data);
@@ -39,7 +39,7 @@ const Profissionais = () => {
   const fetchHorarios = async (medicoId, dataSelecionada) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/medicos/${medicoId}/horarios?data=${dataSelecionada.toISOString()}`
+        `https://si-1.onrender.com/api/medicos/${medicoId}/horarios?data=${dataSelecionada.toISOString()}`
       );
       if (!response.ok) throw new Error('Erro ao buscar horários');
       const horariosData = await response.json();

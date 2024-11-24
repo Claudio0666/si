@@ -11,7 +11,7 @@ const CheckInHistory = () => {
   useEffect(() => {
     const fetchCheckIns = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/checkin', {
+        const response = await fetch('https://si-1.onrender.com/api/checkin', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

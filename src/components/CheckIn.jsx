@@ -15,7 +15,7 @@ const CheckIn = () => {
         if (!token) return;
 
         try {
-            const response = await axios.get('http://localhost:5000/api/checkin/today', {
+            const response = await axios.get('https://si-1.onrender.com/api/checkin/today', {
                 headers: { 'Authorization': `Bearer ${token}` },
             });
             if (response.data && response.data.timestamp) {
@@ -47,7 +47,7 @@ const CheckIn = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/checkin', {
+            const response = await axios.post('https://si-1.onrender.com/api/checkin', {
                 emotion: mood,
                 comment,
             }, {

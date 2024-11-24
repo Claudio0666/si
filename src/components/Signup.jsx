@@ -14,7 +14,7 @@ const Register = () => {
     setSuccessMessage('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', {
+      const response = await axios.post('https://si-1.onrender.com/api/register', {
         username,
         password,
       });

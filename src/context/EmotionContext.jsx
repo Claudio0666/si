@@ -59,12 +59,12 @@ export const EmotionProvider = ({ children }) => {
         }
     }, []);
 
-    const fetchEmotions = () => fetchData('http://localhost:5000/api/checkin', setEmotions, 'Erro ao buscar emoções');
-    const fetchLastEmotion = () => fetchData('http://localhost:5000/api/emotion/latest', setLastEmotion, 'Erro ao buscar última emoção');
+    const fetchEmotions = () => fetchData('https://si-1.onrender.com/api/checkin', setEmotions, 'Erro ao buscar emoções');
+    const fetchLastEmotion = () => fetchData('https://si-1.onrender.com/api/emotion/latest', setLastEmotion, 'Erro ao buscar última emoção');
 
     const handleLogin = async (credentials) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/login', credentials);
+            const response = await axios.post('https://si-1.onrender.com/api/login', credentials);
             localStorage.setItem('token', response.data.token);
             setIsLoggedIn(true);
             setLoginError(null);
@@ -83,7 +83,7 @@ export const EmotionProvider = ({ children }) => {
         }
 
         try {
-            await axios.post('http://localhost:5000/api/checkin', { emotion }, {
+            await axios.post('https://si-1.onrender.com/api/checkin', { emotion }, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             setEmotions((prevEmotions) => [...prevEmotions, emotion]);
