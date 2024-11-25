@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: 'Arial', sans-serif;
   padding-top: 80px; /* Espaço para acomodar a navbar fixa */
-  background-image: url('/src/imagem/34.webp'); /* Imagem de fundo */
+  background-image: url('../public/imagem/2.jpg'); /* Imagem de fundo */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Torna a imagem fixa enquanto o conteúdo rola */
