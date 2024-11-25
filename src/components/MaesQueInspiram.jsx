@@ -32,7 +32,7 @@ const MaesQueInspiram = () => {
             </p>
           </div>
           <div className="imagem-container">
-            <img src="src/imagem/mae1.1.png" alt="Mãe inspiradora" />
+            <img src="/imagem/mae1.1.png" alt="Mãe inspiradora" />
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ const MaesQueInspiram = () => {
             </p>
           </div>
           <div className="imagem-container">
-            <img src="src/imagem/mae2.1.jpg" alt="Outra Mãe Inspiradora" />
+            <img src="/imagem/mae2.1.jpg" alt="Outra Mãe Inspiradora" />
           </div>
         </div>
       </div>
