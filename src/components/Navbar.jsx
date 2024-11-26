@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link to="/profissionais" className="nav-link">Profissionais</Link>
         </li>
         <li>
-          <Link to="/AjudeNosAMelhorar" className="nav-link">Ajude Nos A Melhorar</Link>
+          <Link to="/AjudeNosAMelhorar" className="nav-link">Ajude-nos a melhorar</Link>
         </li>
         <li
           onMouseEnter={() => handleMouseEnter("login")}
